@@ -29,7 +29,7 @@ public class DynamoDbConfig {
     }
 
     @Bean
-    public DynamoDbEnhancedAsyncClient getDynamoDbEnhancedAsyncClient() {
+    public DynamoDbEnhancedAsyncClient dynamoDbEnhancedAsyncClient() {
         return DynamoDbEnhancedAsyncClient.builder()
                 .dynamoDbClient(dynamoDbAsyncClient())
                 .build();
